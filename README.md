@@ -4,6 +4,11 @@
 
 </div>
 
+## Termin 1 Dokumentation
+
+Die vollstaendige Benutzer- und Entwicklerdokumentation fuer Termin 1 finden Sie in
+[docs/Termin1.md](/home/jeapi/Desktop/Studium/Semester4/Betriebssysteme/P1/OSMP_SYSTEM/docs/Termin1.md).
+
 ## 📋 Inhalt
 
 - [📋 Inhalt](#-inhalt)

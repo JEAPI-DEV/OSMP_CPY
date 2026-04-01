@@ -56,7 +56,11 @@ set(LIBRARIES  pthread  libosmp )
 set(OSMP_RUNNER_NAME osmprun)
 set(EXECUTABLES
     NAME ${OSMP_RUNNER_NAME}
-    SOURCES src/osmpRunner/osmpRun.c
+    SOURCES
+        src/osmpRunner/osmpRun.c
+        src/osmpRunner/runner_parse.c
+        src/osmpRunner/runner_log.c
+        src/osmpRunner/runner_exec.c
     NAME echoall
     SOURCES src/osmpExecutables/echoAll.c
     # Neue Executables hier einfügen

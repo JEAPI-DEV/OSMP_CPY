@@ -115,14 +115,14 @@ int OSMP_GetMaxPayloadLength(void);
  *
  * @return Die maximale Länge des Shared Memory Namens
  */
-int OSMP_GetMaxLogNameLength(void);
+int OSMP_GetMaxLogNameLength(void); // ??????
 
 /**
  * Gibt die maximale Länge des Logfile Namens zurück.
  *
  * @return Die maximale Länge des Logfile Namens
  */
-int OSMP_GetMaxLogNameLenght(void);
+int OSMP_GetMaxLogNameLenght(void); // ??????
 
 /**
  * @brief Gibt zur Laufzeit einen eindeutigen Namen für den Shared-Memory-Bereich zurück.
