@@ -1,0 +1,247 @@
+==28828==Registered root region at 0x7f3f036007a0 of size 32
+==28809==Registered root region at 0x7f86f28007a0 of size 32
+==28828==Unregistered root region at 0x7f3f03a01310 of size 80
+==28808==T0: stack [0x7ffd0b78c000,0x7ffd0bf8c000) size 0x800000; local=0x7ffd0bf8a554
+==28828==Unregistered root region at 0x7f3f036007a0 of size 32
+==28828==AddressSanitizer: failed to intercept '__isoc99_vprintf'
+==28809==Unregistered root region at 0x7f86f2400f40 of size 64
+==28830==Installed the sigaction for signal 11
+==28828==Registered root region at 0x7f3f03a01310 of size 80
+==28828==Registered root region at 0x7f3f036007a0 of size 32
+==28809==Unregistered root region at 0x7f86f28007a0 of size 32
+==28828==Unregistered root region at 0x7f3f03a01310 of size 80
+==28830==Installed the sigaction for signal 7
+==28828==Unregistered root region at 0x7f3f036007a0 of size 32
+==28809==AddressSanitizer: failed to intercept 'crypt_r'
+==28828==AddressSanitizer: failed to intercept '__isoc99_vsprintf'
+==28830==Installed the sigaction for signal 8
+==28828==Registered root region at 0x7f3f03a01310 of size 80
+==28828==Registered root region at 0x7f3f036007a0 of size 32
+==28809==AddressSanitizer: libc interceptors initialized
+==28828==Unregistered root region at 0x7f3f03a01310 of size 80
+==28828==Unregistered root region at 0x7f3f036007a0 of size 32
+==28828==AddressSanitizer: failed to intercept '__isoc99_vsnprintf'
+==28845==Processing thread 28810.
+==28814==T0: stack [0x7ffe2b1d2000,0x7ffe2b9d2000) size 0x800000; local=0x7ffe2b9cefa4
+==28828==Registered root region at 0x7f3f03a01310 of size 80
+==28845==Stack at 0x7fffb2988000-0x7fffb3188000 (SP = 0x7fffb3186158).
+==28845==TLS at 0x7fd21bade000-0x7fd21badf180.
+==28828==Registered root region at 0x7f3f036007a0 of size 32
+==28799==AddressSanitizer Init done
+==28828==Unregistered root region at 0x7f3f03a01310 of size 80
+==28828==Unregistered root region at 0x7f3f036007a0 of size 32
+==28828==AddressSanitizer: failed to intercept '__isoc99_vfprintf'
+|| `[0x10007fff8000, 0x7fffffffffff]` || HighMem    ||
+==28830==T0: stack [0x7fffb9224000,0x7fffb9a24000) size 0x800000; local=0x7fffb9a21224
+|| `[0x02008fff7000, 0x10007fff7fff]` || HighShadow ||
+==28828==Registered root region at 0x7f3f034016e0 of size 96
+argv[1] = hello
+==28828==Registered root region at 0x7f3f036007a0 of size 32
+Iteration 1: PID=28799 PPID=22407 TID=28799
+|| `[0x00008fff7000, 0x02008fff6fff]` || ShadowGap  ||
+==28776==AddressSanitizer Init done
+Iteration 2: PID=28799 PPID=22407 TID=28799
+Iteration 3: PID=28799 PPID=22407 TID=28799
+==28828==Unregistered root region at 0x7f3f034016e0 of size 96
+==28828==Unregistered root region at 0x7f3f036007a0 of size 32
+|| `[0x00007fff8000, 0x00008fff6fff]` || LowShadow  ||
+|| `[0x000000000000, 0x00007fff7fff]` || LowMem     ||
+==28828==AddressSanitizer: failed to intercept 'pthread_mutexattr_getrobust_np'
+==28843==Processing thread 28770.
+MemToShadow(shadow): 0x00008fff7000 0x000091ff6dffargv[1] = hello
+Iteration 1: PID=28776 PPID=22407 TID=28776
+Iteration 2: PID=28776 PPID=22407 TID=28776
+Iteration 3: PID=28776 PPID=22407 TID=28776
+ 0x004091ff6e00 0x02008fff6fff==28843==Stack at 0x7fffb33ec000-0x7fffb3bec000 (SP = 0x7fffb3be8948).
+==28828==Registered root region at 0x7f3f03200f40 of size 64
+==28828==Registered root region at 0x7f3f036007a0 of size 32
+
+==28828==Unregistered root region at 0x7f3f03200f40 of size 64
+==28828==Unregistered root region at 0x7f3f036007a0 of size 32
+==28843==TLS at 0x7f9c8ab15000-0x7f9c8ab16180.
+==28828==AddressSanitizer: failed to intercept 'xdr_quad_t'
+redzone=16
+==28828==Registered root region at 0x7f3f03a01310 of size 80
+==28781==AddressSanitizer Init done
+==28828==Registered root region at 0x7f3f036007a0 of size 32
+max_redzone=2048
+==28828==Unregistered root region at 0x7f3f03a01310 of size 80
+==28828==Unregistered root region at 0x7f3f036007a0 of size 32
+==28808==AddressSanitizer Init done
+quarantine_size_mb=256M
+==28828==AddressSanitizer: failed to intercept 'xdr_u_quad_t'
+==28828==Registered root region at 0x7f3f03a01310 of size 80
+==28828==Registered root region at 0x7f3f036007a0 of size 32
+thread_local_quarantine_size_kb=1024K
+==28828==Unregistered root region at 0x7f3f03a01310 of size 80
+argv[1] = hello
+==28828==Unregistered root region at 0x7f3f036007a0 of size 32
+Iteration 1: PID=28781 PPID=22407 TID=28781
+Iteration 2: PID=28781 PPID=22407 TID=28781
+Iteration 3: PID=28781 PPID=22407 TID=28781
+==28828==AddressSanitizer: failed to intercept 'xdr_destroy'
+malloc_context_size=30
+==28819==AddressSanitizer Init done
+==28828==Registered root region at 0x7f3f03200f40 of size 64
+argv[1] = hello
+Iteration 1: PID=28808 PPID=22407 TID=28808
+Iteration 2: PID=28808 PPID=22407 TID=28808
+Iteration 3: PID=28808 PPID=22407 TID=28808
+SHADOW_SCALE: 3
+==28828==Registered root region at 0x7f3f036007a0 of size 32
+SHADOW_GRANULARITY: 8
+==28828==Unregistered root region at 0x7f3f03200f40 of size 64
+==28828==Unregistered root region at 0x7f3f036007a0 of size 32
+==28828==AddressSanitizer: failed to intercept 'crypt'
+SHADOW_OFFSET: 0x7fff8000
+==28828==Registered root region at 0x7f3f03200f40 of size 64
+==28847==Processing thread 28834.
+==28828==Registered root region at 0x7f3f036007a0 of size 32
+==28847==Stack at 0x7ffe2d4d9000-0x7ffe2dcd9000 (SP = 0x7ffe2dcd6f68).
+==28809==Installed the sigaction for signal 11
+argv[1] = hello
+Iteration 1: PID=28819 PPID=22407 TID=28819
+==28847==TLS at 0x7f03bf16c000-0x7f03bf16d180.
+Iteration 2: PID=28819 PPID=22407 TID=28819
+==28828==Unregistered root region at 0x7f3f03200f40 of size 64
+Iteration 3: PID=28819 PPID=22407 TID=28819
+==28828==Unregistered root region at 0x7f3f036007a0 of size 32
+==28828==AddressSanitizer: failed to intercept 'crypt_r'
+==28809==Installed the sigaction for signal 7
+==28828==AddressSanitizer: libc interceptors initialized
+==28814==AddressSanitizer Init done
+==28809==Installed the sigaction for signal 8
+|| `[0x10007fff8000, 0x7fffffffffff]` || HighMem    ||
+|| `[0x02008fff7000, 0x10007fff7fff]` || HighShadow ||
+|| `[0x00008fff7000, 0x02008fff6fff]` || ShadowGap  ||
+|| `[0x00007fff8000, 0x00008fff6fff]` || LowShadow  ||
+|| `[0x000000000000, 0x00007fff7fff]` || LowMem     ||
+MemToShadow(shadow): 0x00008fff7000 0x000091ff6dff 0x004091ff6e00 0x02008fff6fff
+redzone=16
+==28830==AddressSanitizer Init done
+max_redzone=2048
+quarantine_size_mb=256M
+argv[1] = hello
+thread_local_quarantine_size_kb=1024K
+Iteration 1: PID=28814 PPID=22407 TID=28814
+Iteration 2: PID=28814 PPID=22407 TID=28814
+Iteration 3: PID=28814 PPID=22407 TID=28814
+malloc_context_size=30
+SHADOW_SCALE: 3
+SHADOW_GRANULARITY: 8
+SHADOW_OFFSET: 0x7fff8000
+==28828==Installed the sigaction for signal 11
+==28820==AddressSanitizer: failed to intercept '__isoc99_vsnprintf'
+==28809==T0: stack [0x7ffc509dd000,0x7ffc511dd000) size 0x800000; local=0x7ffc511d9e64
+==28828==Installed the sigaction for signal 7
+==28828==Installed the sigaction for signal 8
+==28820==Registered root region at 0x7f7c7e001310 of size 80
+==28846==Processing thread 28792.
+==28846==Stack at 0x7ffd856dd000-0x7ffd85edd000 (SP = 0x7ffd85edaa98).
+argv[1] = hello
+Iteration 1: PID=28830 PPID=22407 TID=28830
+Iteration 2: PID=28830 PPID=22407 TID=28830
+==28820==Registered root region at 0x7f7c7dc007a0 of size 32
+Iteration 3: PID=28830 PPID=22407 TID=28830
+==28846==TLS at 0x7f34ab0dd000-0x7f34ab0de180.
+==28820==Unregistered root region at 0x7f7c7e001310 of size 80
+==28828==T0: stack [0x7fffe667b000,0x7fffe6e7b000) size 0x800000; local=0x7fffe6e78334
+==28820==Unregistered root region at 0x7f7c7dc007a0 of size 32
+==28820==AddressSanitizer: failed to intercept '__isoc99_vfprintf'
+==28820==Registered root region at 0x7f7c7da016e0 of size 96
+==28820==Registered root region at 0x7f7c7dc007a0 of size 32
+==28820==Unregistered root region at 0x7f7c7da016e0 of size 96
+==28820==Unregistered root region at 0x7f7c7dc007a0 of size 32
+==28820==AddressSanitizer: failed to intercept 'pthread_mutexattr_getrobust_np'
+==28828==AddressSanitizer Init done
+==28820==Registered root region at 0x7f7c7d800f40 of size 64
+==28820==Registered root region at 0x7f7c7dc007a0 of size 32
+argv[1] = hello
+Iteration 1: PID=28828 PPID=22407 TID=28828
+Iteration 2: PID=28828 PPID=22407 TID=28828
+Iteration 3: PID=28828 PPID=22407 TID=28828
+==28820==Unregistered root region at 0x7f7c7d800f40 of size 64
+==28809==AddressSanitizer Init done
+==28820==Unregistered root region at 0x7f7c7dc007a0 of size 32
+==28820==AddressSanitizer: failed to intercept 'xdr_quad_t'
+==28820==Registered root region at 0x7f7c7e001310 of size 80
+==28820==Registered root region at 0x7f7c7dc007a0 of size 32
+==28820==Unregistered root region at 0x7f7c7e001310 of size 80
+argv[1] = hello
+Iteration 1: PID=28809 PPID=22407 TID=28809
+Iteration 2: PID=28809 PPID=22407 TID=28809
+Iteration 3: PID=28809 PPID=22407 TID=28809
+==28820==Unregistered root region at 0x7f7c7dc007a0 of size 32
+==28820==AddressSanitizer: failed to intercept 'xdr_u_quad_t'
+==28820==Registered root region at 0x7f7c7e001310 of size 80
+==28820==Registered root region at 0x7f7c7dc007a0 of size 32
+==28820==Unregistered root region at 0x7f7c7e001310 of size 80
+==28849==Processing thread 28776.
+==28820==Unregistered root region at 0x7f7c7dc007a0 of size 32
+==28849==Stack at 0x7ffe24626000-0x7ffe24e26000 (SP = 0x7ffe24e24198).
+==28849==TLS at 0x7f5cab59d000-0x7f5cab59e180.
+==28820==AddressSanitizer: failed to intercept 'xdr_destroy'
+==28850==Processing thread 28781.
+==28850==Stack at 0x7fff85217000-0x7fff85a17000 (SP = 0x7fff85a14398).
+==28820==Registered root region at 0x7f7c7d800f40 of size 64
+==28850==TLS at 0x7f8a420aa000-0x7f8a420ab180.
+==28820==Registered root region at 0x7f7c7dc007a0 of size 32
+==28851==Processing thread 28808.
+==28851==Stack at 0x7ffd0b78c000-0x7ffd0bf8c000 (SP = 0x7ffd0bf8a158).
+==28820==Unregistered root region at 0x7f7c7d800f40 of size 64
+==28851==TLS at 0x7f9dce8dc000-0x7f9dce8dd180.
+==28820==Unregistered root region at 0x7f7c7dc007a0 of size 32
+==28820==AddressSanitizer: failed to intercept 'crypt'
+==28820==Registered root region at 0x7f7c7d800f40 of size 64
+==28820==Registered root region at 0x7f7c7dc007a0 of size 32
+==28820==Unregistered root region at 0x7f7c7d800f40 of size 64
+==28820==Unregistered root region at 0x7f7c7dc007a0 of size 32
+==28820==AddressSanitizer: failed to intercept 'crypt_r'
+==28820==AddressSanitizer: libc interceptors initialized
+|| `[0x10007fff8000, 0x7fffffffffff]` || HighMem    ||
+|| `[0x02008fff7000, 0x10007fff7fff]` || HighShadow ||
+|| `[0x00008fff7000, 0x02008fff6fff]` || ShadowGap  ||
+|| `[0x00007fff8000, 0x00008fff6fff]` || LowShadow  ||
+|| `[0x000000000000, 0x00007fff7fff]` || LowMem     ||
+MemToShadow(shadow): 0x00008fff7000 0x000091ff6dff 0x004091ff6e00 0x02008fff6fff
+redzone=16
+max_redzone=2048
+quarantine_size_mb=256M
+thread_local_quarantine_size_kb=1024K
+malloc_context_size=30
+SHADOW_SCALE: 3
+==28848==Processing thread 28799.
+SHADOW_GRANULARITY: 8
+==28848==Stack at 0x7ffe3301b000-0x7ffe3381b000 (SP = 0x7ffe33818a68).
+SHADOW_OFFSET: 0x7fff8000
+==28855==Processing thread 28828.
+==28848==TLS at 0x7ffac4b83000-0x7ffac4b84180.
+==28855==Stack at 0x7fffe667b000-0x7fffe6e7b000 (SP = 0x7fffe6e77f38).
+==28820==Installed the sigaction for signal 11
+==28855==TLS at 0x7f3f056fb000-0x7f3f056fc180.
+==28820==Installed the sigaction for signal 7
+==28820==Installed the sigaction for signal 8
+==28820==T0: stack [0x7ffdba2bc000,0x7ffdbaabc000) size 0x800000; local=0x7ffdbaab92d4
+==28852==Processing thread 28819.
+==28852==Stack at 0x7ffe42b3a000-0x7ffe4333a000 (SP = 0x7ffe43338258).
+==28852==TLS at 0x7ff58ad7f000-0x7ff58ad80180.
+==28854==Processing thread 28830.
+==28854==Stack at 0x7fffb9224000-0x7fffb9a24000 (SP = 0x7fffb9a20e28).
+==28854==TLS at 0x7f94514ad000-0x7f94514ae180.
+==28820==AddressSanitizer Init done
+argv[1] = hello
+Iteration 1: PID=28820 PPID=22407 TID=28820
+Iteration 2: PID=28820 PPID=22407 TID=28820
+Iteration 3: PID=28820 PPID=22407 TID=28820
+==28856==Processing thread 28809.
+==28856==Stack at 0x7ffc509dd000-0x7ffc511dd000 (SP = 0x7ffc511d9a68).
+==28856==TLS at 0x7f86f4956000-0x7f86f4957180.
+==28853==Processing thread 28814.
+==28853==Stack at 0x7ffe2b1d2000-0x7ffe2b9d2000 (SP = 0x7ffe2b9ceba8).
+==28853==TLS at 0x7fb7cecde000-0x7fb7cecdf180.
+==28857==Processing thread 28820.
+==28857==Stack at 0x7ffdba2bc000-0x7ffdbaabc000 (SP = 0x7ffdbaab8ed8).
+==28857==TLS at 0x7f7c7fd7e000-0x7f7c7fd7f180.
+==28858==Processing thread 22407.
+==28858==Stack at 0x7fffc693e000-0x7fffc713e000 (SP = 0x7fffc713bbd8).
+==28858==TLS at 0x7fa7394d4000-0x7fa7394d5180.
