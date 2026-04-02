@@ -88,10 +88,9 @@ runner_status_t wait_for_children(osmp_peer_t *peers, int started_count, runner_
     {
         osmp_peer_t *peer = &peers[index];
         int status = 0;
-        pid_t waited_pid;
         runner_status_t child_result;
 
-        waited_pid = waitpid(peer->pid, &status, 0);
+        const pid_t waited_pid = waitpid(peer->pid, &status, 0);
         if (waited_pid < 0)
         {
             perror("waitpid fehlgeschlagen");
@@ -170,7 +169,7 @@ runner_status_t runner_execute(const runner_config_t *config)
             runner_log(&logger, OSMP_LOG_ALL,
                        "[PEER %d][ERROR] execvp fuer '%s' fehlgeschlagen: %s",
                        index, config->exec_argv[0], strerror(errno));
-            _exit(127);
+            _exit(127); // Not found in path > Bash return the same error, apparently.
         }
 
         peers[index].pid = child_pid;

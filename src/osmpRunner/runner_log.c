@@ -63,10 +63,7 @@ void runner_vlog(runner_logger_t *logger, OSMP_Verbosity verbosity,
     }
 
     message = malloc((size_t)needed + 1U);
-    if (message == NULL)
-    {
-        return;
-    }
+    if (message == NULL) return;
     vsnprintf(message, (size_t)needed + 1U, format, args);
     fprintf(logger->file, "%s %d %ld %s\n", timestamp, verbosity, (long) getpid(), message);
     fflush(logger->file);

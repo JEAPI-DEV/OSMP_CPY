@@ -95,7 +95,7 @@ flowchart TD
 # 4 Test
 
 Auszug:
-
+```
 2026-04-01T23:47:43 1 204452 [RUNNER] Starte 50 Peers mit Executable './build/echoall'.
 2026-04-01T23:47:43 2 204452 [RUNNER] Speicher fuer 50 Peer-Eintraege reserviert
 2026-04-01T23:47:43 2 204452 [RUNNER] Peer 0 gestartet mit PID 204453
@@ -119,3 +119,4 @@ Auszug:
 2026-04-01T23:47:43 2 204452 [RUNNER] Peer PID 204545 beendet mit Exit-Code 0
 2026-04-01T23:47:43 2 204452 [RUNNER] Gebe Peer-Array frei
 2026-04-01T23:47:43 1 204452 [RUNNER] Terminierung abgeschlossen
+```
