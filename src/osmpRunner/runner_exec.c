@@ -38,7 +38,6 @@ runner_status_t fail_peer(runner_logger_t *logger, osmp_peer_t *peer,
                                  runner_status_t status, const char *format, ...)
 {
     va_list args;
-
     peer->peer_state = OSMP_PEER_FAILED;
 
     va_start(args, format);

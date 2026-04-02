@@ -161,10 +161,10 @@ runner_status_t runner_parse_args(int argc, char **argv, runner_config_t *config
             continue;
         }
         if (strcmp(arg, "-e") == 0) {
-            if (seen_e) {
-                fprintf(stderr, "Option -e darf nur einmal gesetzt werden.\n");
-                return RUNNER_FAILURE;
-            }
+            // if (seen_e) {
+            //     fprintf(stderr, "Option -e darf nur einmal gesetzt werden.\n");
+            //     return RUNNER_FAILURE;
+            // }
             if (!require_option_value(argc, index, "-e")) {
                 return RUNNER_FAILURE;
             }

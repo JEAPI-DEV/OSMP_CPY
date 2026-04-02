@@ -16,8 +16,7 @@
 int main(int argc, char **argv)
 {
     runner_config_t config;
-    runner_status_t parse_status;
-    runner_status_t run_status;
+    runner_status_t parse_status, run_status;
 
     parse_status = runner_parse_args(argc, argv, &config);
     if (parse_status == RUNNER_HELP)
@@ -27,8 +26,7 @@ int main(int argc, char **argv)
     }
     if (parse_status != RUNNER_SUCCESS)
     {
-        runner_log_parse_error_if_possible(&config,
-                                           "Abbruch wegen ungueltiger Parameter.");
+        runner_log_parse_error_if_possible(&config,"Abbruch wegen ungueltiger Parameter.");
         return EXIT_FAILURE;
     }
 

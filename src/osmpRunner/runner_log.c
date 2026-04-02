@@ -46,7 +46,6 @@ void runner_vlog(runner_logger_t *logger, OSMP_Verbosity verbosity,
     struct tm local_tm;
     va_list args_copy;
     char *message = NULL;
-    int needed;
 
     if (logger == NULL || logger->file == NULL) return;
     if (verbosity == OSMP_LOG_NONE || (int)verbosity > (int)logger->threshold) return;
@@ -56,7 +55,7 @@ void runner_vlog(runner_logger_t *logger, OSMP_Verbosity verbosity,
     if (strftime(timestamp, sizeof(timestamp), "%Y-%m-%dT%H:%M:%S", &local_tm) == 0) return;
 
     va_copy(args_copy, args);
-    needed = vsnprintf(NULL, 0, format, args_copy);
+    int needed = vsnprintf(NULL, 0, format, args_copy);
     va_end(args_copy);
     if (needed < 0)
     {
@@ -68,11 +67,9 @@ void runner_vlog(runner_logger_t *logger, OSMP_Verbosity verbosity,
     {
         return;
     }
-    (void)vsnprintf(message, (size_t)needed + 1U, format, args);
-
-    (void)fprintf(logger->file, "%s %d %ld %s\n", timestamp, (int)verbosity,
-                  (long)getpid(), message);
-    (void)fflush(logger->file);
+    vsnprintf(message, (size_t)needed + 1U, format, args);
+    fprintf(logger->file, "%s %d %ld %s\n", timestamp, verbosity, (long) getpid(), message);
+    fflush(logger->file);
     free(message);
 }
 
