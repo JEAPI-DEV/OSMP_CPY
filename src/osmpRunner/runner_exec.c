@@ -103,11 +103,7 @@ runner_status_t wait_for_children(osmp_peer_t *peers, int started_count, runner_
             child_result = handle_child_status(logger, peer, status);
         }
 
-        if (result == RUNNER_SUCCESS && child_result != RUNNER_SUCCESS)
-        {
-            result = child_result;
-        }
-
+        if (result == RUNNER_SUCCESS && child_result != RUNNER_SUCCESS) result = child_result;
         index++;
     }
 
@@ -122,10 +118,7 @@ runner_status_t runner_execute(const runner_config_t *config)
     int started_count = 0;
     int index = 0;
 
-    if (!runner_logger_open(config, &logger))
-    {
-        return RUNNER_FAILURE;
-    }
+    if (!runner_logger_open(config, &logger)) return RUNNER_FAILURE;
 
     runner_log(&logger, OSMP_LOG_BIB,
                "[RUNNER] Starte %d Peers mit Executable '%s'.",

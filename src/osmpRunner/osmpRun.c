@@ -16,9 +16,8 @@
 int main(int argc, char **argv)
 {
     runner_config_t config;
-    runner_status_t parse_status, run_status;
 
-    parse_status = runner_parse_args(argc, argv, &config);
+    runner_status_t parse_status = runner_parse_args(argc, argv, &config);
     if (parse_status == RUNNER_HELP)
     {
         runner_print_help(argv[0]);
@@ -30,7 +29,7 @@ int main(int argc, char **argv)
         return EXIT_FAILURE;
     }
 
-    run_status = runner_execute(&config);
+    runner_status_t run_status = runner_execute(&config);
     if (run_status == RUNNER_SUCCESS)
     {
         return EXIT_SUCCESS;
