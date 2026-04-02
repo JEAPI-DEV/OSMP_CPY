@@ -10,6 +10,7 @@
 #include "runner_log.h"
 
 #include <errno.h>
+#include <signal.h>
 #include <stdarg.h>
 #include <stdlib.h>
 #include <string.h>
@@ -147,7 +148,15 @@ runner_status_t runner_execute(const runner_config_t *config)
             perror("fork fehlgeschlagen");
             runner_log(&logger, OSMP_LOG_ALL,
                        "[RUNNER][ERROR] fork bei Peer %d fehlgeschlagen: %s",
-                       index, strerror(errno));
+                       index, strerror(errno));            
+            runner_log(&logger, OSMP_LOG_ALL, "[RUNNER][ERROR] Breche ab und beende %d bereits gestartete Peers", started_count);
+            for (int k = 0; k < started_count; k++) // attempt to fix asan error.
+            {
+                if (peers[k].pid > 0)
+                {
+                    kill(peers[k].pid, SIGKILL);
+                }
+            }
             status = RUNNER_FAILURE;
             break;
         }
