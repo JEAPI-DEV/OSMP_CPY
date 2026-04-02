@@ -66,21 +66,3 @@ void runner_log(runner_logger_t *logger, OSMP_Verbosity verbosity,
     runner_vlog(logger, verbosity, format, args);
     va_end(args);
 }
-
-void runner_log_parse_error_if_possible(const runner_config_t *config,
-                                        const char *message)
-{
-    runner_config_t temporary;
-    runner_logger_t logger;
-
-    if (config == NULL) return;
-    if (config->log_path == NULL && config->log_level == OSMP_LOG_NONE) return;
-
-    temporary = *config;
-    if (temporary.log_path == NULL) temporary.log_path = RUNNER_DEFAULT_LOG_FILE;
-    if (temporary.log_level == OSMP_LOG_NONE) temporary.log_level = OSMP_LOG_BIB;
-
-    if (!runner_logger_open(&temporary, &logger))return;
-    runner_log(&logger, OSMP_LOG_ALL, "[RUNNER][ERROR] %s", message);
-    runner_logger_close(&logger);
-}

@@ -25,7 +25,8 @@ int main(int argc, char **argv)
     }
     if (parse_status != RUNNER_SUCCESS)
     {
-        runner_log_parse_error_if_possible(&config,"Abbruch wegen ungueltiger Parameter.");
+        perror("Abbruch wegen ungueltiger Parameter.");
+        //runner_log_parse_error_if_possible(&config,"Abbruch wegen ungueltiger Parameter.");
         return EXIT_FAILURE;
     }
 
